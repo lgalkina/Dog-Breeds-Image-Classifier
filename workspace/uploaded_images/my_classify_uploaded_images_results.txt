@@ -1,0 +1,41 @@
+For the test "Classify Uploaded Images" 4 images were uploaded:
+1) Dog_01.jpg - image of a dog, breed - Akita
+2) Dog_02.jpg - Dog_01.jpg rotated by 180 degrees
+3) Elephant_01.jpg - image of an elephant
+4) Car_01.jpg - image of a car
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+If not, report the differences in the classifications.
+VGG: eskimo dog, husky
+ALEXNET: eskimo dog, husky
+RESNET: eskimo dog, husky
+All three model architectures classify the breed of dog to be the same. The eskimo dog and husky breeds look like Akita breed. 
+ 
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? 
+If not, report the differences in the classifications.
+VGG: borzoi, russian wolfhound
+ALEXNET: cardigan, cardigan welsh corgi, corgi
+RESNET: pembroke, pembroke welsh corgi, corgi
+None of three model architectures classify the breed of dog to be the same as for Dog_01.jpg. 
+The result of VGG is closer - borzoi and russian wolfhound breeds look like Akita breed. 
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+All three model architectures classify Elephant_01.jpg and Car_01.jpg as not dogs.
+
+Elephant_01.jpg:
+VGG: african elephant, loxodonta africana
+ALEXNET: tusker
+RESNET: tusker
+
+Car_01.jpg:
+VGG: sports car, sport car
+ALEXNET: racer, race car, racing car
+RESNET: sports car, sport car
+
+Only VGG model correcly identified that Elephant_01.jpg is an elephant. The Car_01.jpg was correctly identified as a car by all three model architectures.
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. 
+Describe why you selected that model architecture as the best on uploaded image classification. 
+
+VGG classified the uploaded images better since the results of classification of both Dog_01.jpg and Dog_02.jpg were closer to the actual breed 
+and classification results of Elephant_01.jpg and Car_01.jpg was correct.
