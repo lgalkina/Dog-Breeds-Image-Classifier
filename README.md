@@ -7,6 +7,8 @@ classification algorithm works on correctly identifying a dog's breed.
 ## Versions
 - [Anaconda 5.3 with Python 3](https://www.anaconda.com/download/)
 
+## Results
+
 ### VGG results:
 Number of Images         :  40  
 Number of Dog Images     :  30  
